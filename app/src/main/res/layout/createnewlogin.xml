@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
-
-    <!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-
-<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--            android:id="@+id/bottomNavView"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="bottom"-->
-<!--            app:menu="@menu/google" />-->
-<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
-
 
     <ImageView
         android:layout_width="match_parent"
@@ -27,6 +15,20 @@
         android:layout_marginTop="-15dp"
         android:scaleType="centerCrop"
         android:src="@drawable/log" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/google"
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 
     <TextView
         android:id="@+id/createAccount"
@@ -122,6 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/reEnterPassword"
         android:layout_centerHorizontal="true"
-        android:hint="create"/>
+        android:text="CreateAccount"
+        />
 
 </RelativeLayout>
