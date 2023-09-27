@@ -22,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.send.LoginApp.CreateActivity"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
@@ -31,6 +32,7 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
+
         <activity
             android:name="com.send.LoginApp.ForgotPassword"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
@@ -40,6 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.send.LoginApp.HomeActivity"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
@@ -48,6 +51,7 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
+
         <activity
             android:name="com.send.LoginApp.LogoutActivity"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
@@ -57,10 +61,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.send.LoginApp.MainActivity"
             android:exported="true">
         </activity>
+
     </application>
 
 </manifest>
