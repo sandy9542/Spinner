@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/log"
+        android:scaleType="centerCrop"/>
+
+    <!-- Your main content layout goes here -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/menu_button"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include
+        android:id="@+id/log"
+        layout="@layout/loginactivity"/>
+    <include
+        android:id="@+id/createNewUser"
+        layout="@layout/createnewlogin"/>
+    <include
+        android:id="@+id/ForgotPassword"
+        layout="@layout/forgotpassword"/>
+    <include
+        android:id="@+id/LogOut"
+        layout="@layout/logoutactivity"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="fristname">FristName</string>
+    <string-array name="number">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+    </string-array>
+</resources>
