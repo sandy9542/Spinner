@@ -36,4 +36,7 @@
     <include
         android:id="@+id/LogOut"
         layout="@layout/logoutactivity"/>
+    <include
+        android:id="@+id/subject"
+        layout="@layout/subjectsactivity"/>
 </RelativeLayout>

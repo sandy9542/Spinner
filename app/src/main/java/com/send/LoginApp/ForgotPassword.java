@@ -18,26 +18,32 @@ public class ForgotPassword extends AppCompatActivity {
         Button newPassword = findViewById(R.id.Submit);
         TextView email = findViewById(R.id.Email);
         TextView otp = findViewById(R.id.OTP);
+//        final int[] code = new int[1];
         TextView oldPass = findViewById(R.id.enterOldPassword);
         TextView newPass = findViewById(R.id.enterNewPassword);
         Intent intent = getIntent();
-        if(intent != null) {
+        if (intent != null) {
             String message = intent.getStringExtra("Send");
             if (message != null) {
                 Toast.makeText(ForgotPassword.this, "ForgotPassword", Toast.LENGTH_SHORT).show();
             }
         }
+
         newPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                Random random = new Random();
+//                code[0] =random.nextInt(8999)+1000;
+//                String url = "";
+//                RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+//                StringRequest stringRequest = new StringRequest(Request.Method.POST,url,);
                 if (email.getText().toString().equals("1234") && otp.getText().toString().equals("1234") &&
                         oldPass.getText().toString().equals("1234") && newPass.getText().toString().equals("1234")) {
                     Toast.makeText(ForgotPassword.this, "You successfully changed the password", Toast.LENGTH_SHORT).show();
                     Intent intent1 = new Intent(ForgotPassword.this, LoginActivity.class);
                     intent1.putExtra("Account", "Account created");
                     startActivity(intent1);
-                }
-                else  {
+                } else {
                     Toast.makeText(ForgotPassword.this, "You miss something once check", Toast.LENGTH_SHORT).show();
                 }
             }

@@ -4,10 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import com.send.Myapp.R;
 
@@ -47,10 +45,10 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (username.getText().toString().equals("1234") && password.getText().toString().equals("1234")) {
                     Toast.makeText(LoginActivity.this, "LOGIN SUCCESSFULLY", Toast.LENGTH_SHORT).show();
-                    Intent intent= new Intent(LoginActivity.this,HomeActivity.class);
-                    intent.putExtra("Login","Home page opened");
+                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                    intent.putExtra("Login", "Home page opened");
                     startActivity(intent);
-                } else  {
+                } else {
                     Toast.makeText(LoginActivity.this, "You miss the username and password", Toast.LENGTH_SHORT).show();
                 }
             }
