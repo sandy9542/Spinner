@@ -15,7 +15,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homeactivity);
         Button logout = findViewById(R.id.LogOut);
-        Button sub = findViewById(R.id.subject);
+        Button getCourses = findViewById(R.id.courses);
         Intent intent = getIntent();
         if(intent != null) {
             String message = intent.getStringExtra("Send");
@@ -33,10 +33,10 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        sub.setOnClickListener(new View.OnClickListener() {
+        getCourses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this,SubjectActivity.class);
+                Intent intent = new Intent(HomeActivity.this, CoursesActivity.class);
                 intent.putExtra("Subjects fetched ","");
                 startActivity(intent);
             }

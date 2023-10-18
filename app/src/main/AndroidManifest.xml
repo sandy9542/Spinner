@@ -62,7 +62,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.send.LoginApp.SubjectActivity"
+            android:name="com.send.LoginApp.CoursesActivity"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
             android:exported="true">
             <intent-filter>

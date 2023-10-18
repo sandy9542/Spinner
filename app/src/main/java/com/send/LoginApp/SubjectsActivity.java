@@ -2,6 +2,5 @@ package com.send.LoginApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SubjectActivity extends AppCompatActivity {
-
+public class SubjectsActivity extends AppCompatActivity {
 }
