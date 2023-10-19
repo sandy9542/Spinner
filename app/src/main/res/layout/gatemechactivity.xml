@@ -35,14 +35,33 @@
         android:textStyle="bold"/>
 
 
-
-<!--    <Button-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="BUY Courses"-->
-<!--        android:textSize="20dp"-->
-<!--        android:textColor="@color/teal_200"-->
-<!--        android:textStyle="italic"-->
+<!--    <TextView-->
+<!--        android:id="@+id/subject1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="Mathamatics"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="30dp"-->
 <!--        android:layout_below="@id/gatemechcourses"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/subject2"-->
+<!--        android:layout_width="10dp"-->
+<!--        android:layout_height="10dp"-->
+<!--        android:text="Chemical"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="30dp"-->
+<!--        android:layout_below="@id/subject1"/>-->
+
+
+    <Button
+        android:id="@+id/BuyCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy Courses"
+        android:textSize="20dp"
+        android:textColor="@color/teal_200"
+        android:textStyle="italic"
+        android:layout_below="@id/gatemechcourses"/>
 
 </RelativeLayout>
