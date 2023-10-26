@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <ImageView
         android:layout_width="match_parent"
@@ -40,51 +39,72 @@
         android:background="#30ffffff"
         android:drawablePadding="20dp"
         android:text="courses's"
-        android:textSize="25sp"
         android:textColor="@color/black"
         android:textColorHint="@color/purple_700"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_below="@id/courses">
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/gatemech"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="127dp"
-        android:text="GateMech"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/teal_200" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courses"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/gatemech"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="127dp"
+                android:text="GateMech"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/gatecse"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="127dp"
+                android:text="GateCse"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/gatecivil"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="127dp"
+                android:text="GateCivil"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
         <Button
-            android:id="@+id/GateCse"
+            android:id="@+id/gateEEE"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="36dp"
             android:layout_marginStart="26dp"
             android:layout_marginTop="127dp"
-            android:text="GateCse"
+            android:text="Gate EEE"
+            android:textColor="@color/teal_200"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/teal_200"/>
-
-        <Button
-            android:id="@+id/gatecivil"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="127dp"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="GateCivil"
-            android:textColor="@color/teal_200"/>
-
+            android:textStyle="bold" />
     </LinearLayout>
+
 
 </RelativeLayout>
