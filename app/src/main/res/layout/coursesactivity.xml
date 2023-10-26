@@ -73,6 +73,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/teal_200"/>
+
         <Button
             android:id="@+id/gatecivil"
             android:layout_width="100dp"
@@ -82,8 +83,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:text="GateCivil"
-            android:textColor="@color/teal_200"
-            />
+            android:textColor="@color/teal_200"/>
 
     </LinearLayout>
 
