@@ -32,36 +32,82 @@
         android:layout_height="wrap_content"
         android:text="Subjects"
         android:textSize="50sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="@color/orange"/>
 
 
-<!--    <TextView-->
-<!--        android:id="@+id/subject1"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:text="Mathamatics"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textSize="30dp"-->
-<!--        android:layout_below="@id/gatemechcourses"/>-->
+    <TextView
+        android:id="@+id/subject1"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:text="Mechanics of Solids"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:textColor="@color/teal_700"
+        android:layout_below="@id/gatemechcourses"/>
 
-<!--    <TextView-->
-<!--        android:id="@+id/subject2"-->
-<!--        android:layout_width="10dp"-->
-<!--        android:layout_height="10dp"-->
-<!--        android:text="Chemical"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textSize="30dp"-->
-<!--        android:layout_below="@id/subject1"/>-->
+    <TextView
+        android:id="@+id/subject2"
+        android:layout_width="3000dp"
+        android:layout_height="110dp"
+        android:text="Fluid Mechanics Hydraulic Machines"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:textColor="@color/purple_700"
+        android:layout_below="@id/subject1"
+        />
+    <TextView
+        android:id="@+id/subject3"
+        android:layout_width="250dp"
+        android:layout_height="115dp"
+        android:text="Production Technology"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:textColor="@color/purple_200"
+        android:layout_below="@id/subject2"
+        />
 
+    <TextView
+        android:id="@+id/subject4"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:text="Kinematics of Machinery"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:textColor="@color/purple_700"
+        android:layout_below="@id/subject3"
+        />
 
+    <TextView
+        android:id="@+id/subject5"
+        android:layout_width="300dp"
+        android:layout_height="145dp"
+        android:text="Computer Aided Engineering Drawing Practice"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:textColor="@color/orange"
+        android:layout_below="@id/subject4"
+        />
     <Button
         android:id="@+id/BuyCourses"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/subject5"
         android:text="Buy Courses"
-        android:textSize="20dp"
         android:textColor="@color/teal_200"
         android:textStyle="italic"
-        android:layout_below="@id/gatemechcourses"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        />
 
 </RelativeLayout>

@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:text="@string/logout" />
+            android:text="logout" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -50,7 +50,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="26dp"
         android:layout_marginTop="127dp"
-        android:text="@string/courses"
+        android:text="courses"
         android:textStyle="bold"
         android:textSize="14sp"
         android:textColor="@color/teal_200"/>

@@ -42,4 +42,7 @@
     <include
         android:id="@+id/gatemech"
         layout="@layout/gatemechactivity"/>
+    <include
+        android:id="@+id/BuyCourses"
+        layout="@layout/gatemechactivity"/>
 </RelativeLayout>
