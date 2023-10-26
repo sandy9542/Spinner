@@ -34,6 +34,7 @@ public class CreateActivity extends AppCompatActivity {
                         createPass.getText().toString().equals("1234") && reEnterPass.getText().toString().equals("1234")) {
                     Intent intent1 = new Intent(CreateActivity.this, HomeActivity.class);
                     intent1.putExtra("Account", "Account created");
+                    finish();
                     startActivity(intent1);
                 }
                 else {

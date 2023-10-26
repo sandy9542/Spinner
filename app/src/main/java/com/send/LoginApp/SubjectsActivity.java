@@ -24,14 +24,13 @@ public class SubjectsActivity extends AppCompatActivity {
                 Toast.makeText(SubjectsActivity.this, "ForgotPassword", Toast.LENGTH_SHORT).show();
             }
         }
-        buy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SubjectsActivity.this, BuyCourseActivity.class);
-                intent.putExtra("You can see all subjects", "Select Course and Buy");
-                startActivity(intent);
-            }
-        });
+//        buy.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(SubjectsActivity.this, BuyCourseActivity.class);
+//                intent.putExtra("You can see all subjects", "Select Course and Buy");
+//                startActivity(intent);
+//            }
+//        });
     }
-
 }
