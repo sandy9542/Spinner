@@ -29,6 +29,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this,LoginActivity.class);
                 intent.putExtra("Logout","logout SUCCESSFULLY");
+                finish();
                 startActivity(intent);
             }
         });

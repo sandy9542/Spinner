@@ -36,6 +36,7 @@ public class ForgotPassword extends AppCompatActivity {
                     Toast.makeText(ForgotPassword.this, "You successfully changed the password", Toast.LENGTH_SHORT).show();
                     Intent intent1 = new Intent(ForgotPassword.this, LoginActivity.class);
                     intent1.putExtra("Account", "Account created");
+                    finish();
                     startActivity(intent1);
                 } else {
                     Toast.makeText(ForgotPassword.this, "You miss something once check", Toast.LENGTH_SHORT).show();

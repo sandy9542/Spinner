@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:label="Ace online"
         android:icon="@mipmap/ace"
         android:roundIcon="@mipmap/ace"
         android:supportsRtl="true"
@@ -26,57 +27,35 @@
             android:name="com.send.LoginApp.CreateActivity"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
             android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
 
         <activity
             android:name="com.send.LoginApp.ForgotPassword"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
             android:name="com.send.LoginApp.HomeActivity"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
-            android:exported="true"><intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            android:exported="true">
         </activity>
 
         <activity
             android:name="com.send.LoginApp.LogoutActivity"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.send.LoginApp.CoursesActivity"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name="com.send.LoginApp.SubjectsActivity"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.send.LoginApp.MainActivity"

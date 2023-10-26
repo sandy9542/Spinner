@@ -39,7 +39,7 @@
     <TextView
         android:id="@+id/subject1"
         android:layout_width="300dp"
-        android:layout_height="110dp"
+        android:layout_height="107dp"
         android:text="Mechanics of Solids"
         android:textStyle="bold"
         android:textSize="30dp"
@@ -50,9 +50,9 @@
 
     <TextView
         android:id="@+id/subject2"
-        android:layout_width="3000dp"
-        android:layout_height="110dp"
-        android:text="Fluid Mechanics Hydraulic Machines"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="Fluid Mechanics"
         android:textStyle="bold"
         android:textSize="30dp"
         android:background="#30ffffff"
@@ -63,7 +63,7 @@
     <TextView
         android:id="@+id/subject3"
         android:layout_width="250dp"
-        android:layout_height="115dp"
+        android:layout_height="112dp"
         android:text="Production Technology"
         android:textStyle="bold"
         android:textSize="30dp"
@@ -76,7 +76,7 @@
     <TextView
         android:id="@+id/subject4"
         android:layout_width="250dp"
-        android:layout_height="110dp"
+        android:layout_height="112dp"
         android:text="Kinematics of Machinery"
         android:textStyle="bold"
         android:textSize="30dp"
@@ -89,7 +89,7 @@
     <TextView
         android:id="@+id/subject5"
         android:layout_width="300dp"
-        android:layout_height="145dp"
+        android:layout_height="149dp"
         android:text="Computer Aided Engineering Drawing Practice"
         android:textStyle="bold"
         android:textSize="30dp"

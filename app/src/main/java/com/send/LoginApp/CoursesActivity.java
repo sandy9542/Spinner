@@ -26,7 +26,7 @@ public class CoursesActivity extends AppCompatActivity {
         gateMech.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CoursesActivity.this, GateMechanicalActivity.class);
+                Intent intent = new Intent(CoursesActivity.this, SubjectsActivity.class);
                 intent.putExtra("Gate Mech Courses", "Courses are opened");
                 startActivity(intent);
             }
