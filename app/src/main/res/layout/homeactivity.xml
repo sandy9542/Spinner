@@ -55,4 +55,17 @@
         android:textSize="14sp"
         android:textColor="@color/teal_200"/>
 
+
+<!--    <Button-->
+<!--        android:id="@+id/settingsButton"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Me"-->
+<!--        android:drawablePadding="8dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:textColor="@color/orange"-->
+<!--        android:icon="@drawable/baseline_person_24"/>-->
+
 </RelativeLayout>

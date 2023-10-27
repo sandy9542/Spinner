@@ -23,13 +23,10 @@ public class GateCseActivity extends AppCompatActivity {
             }
         }
 
-        gateCse.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(GateCseActivity.this, SubjectsActivity.class);
-                intent.putExtra("Gate Mech subjects", "subject are opened");
-                startActivity(intent);
-            }
+        gateCse.setOnClickListener(v ->{
+                Intent intent1 = new Intent(GateCseActivity.this, SubjectsActivity.class);
+                intent1.putExtra("Gate cse subjects", "subject are opened");
+                startActivity(intent1);
         });
     }
 }

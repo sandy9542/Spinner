@@ -2,7 +2,6 @@ package com.send.LoginApp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,19 +27,16 @@ public class ForgotPassword extends AppCompatActivity {
             }
         }
 
-        newPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (email.getText().toString().equals("1234") && otp.getText().toString().equals("1234") &&
-                        oldPass.getText().toString().equals("1234") && newPass.getText().toString().equals("1234")) {
-                    Toast.makeText(ForgotPassword.this, "You successfully changed the password", Toast.LENGTH_SHORT).show();
-                    Intent intent1 = new Intent(ForgotPassword.this, LoginActivity.class);
-                    intent1.putExtra("Account", "Account created");
-                    finish();
-                    startActivity(intent1);
-                } else {
-                    Toast.makeText(ForgotPassword.this, "You miss something once check", Toast.LENGTH_SHORT).show();
-                }
+        newPassword.setOnClickListener(v -> {
+            if (email.getText().toString().equals("1234") && otp.getText().toString().equals("1234") &&
+                    oldPass.getText().toString().equals("1234") && newPass.getText().toString().equals("1234")) {
+                Toast.makeText(ForgotPassword.this, "You successfully changed the password", Toast.LENGTH_SHORT).show();
+                Intent intent1 = new Intent(ForgotPassword.this, LoginActivity.class);
+                intent1.putExtra("Account", "Account created");
+                finish();
+                startActivity(intent1);
+            } else {
+                Toast.makeText(ForgotPassword.this, "You miss something once check", Toast.LENGTH_SHORT).show();
             }
         });
     }
