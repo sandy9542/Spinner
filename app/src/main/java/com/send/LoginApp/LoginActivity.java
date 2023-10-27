@@ -3,7 +3,6 @@ package com.send.LoginApp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,38 +22,29 @@ public class LoginActivity extends AppCompatActivity {
         TextView password = findViewById(R.id.password);
 
 
-        createnew.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, CreateActivity.class);
-                intent.putExtra("Message", "Hello from new user");
-                finish();
-                startActivity(intent);
-            }
+        createnew.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, CreateActivity.class);
+            intent.putExtra("Message", "Hello from new user");
+            finish();
+            startActivity(intent);
         });
 
-        forgotPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, ForgotPassword.class);
-                intent.putExtra("Message", "New password created");
-                finish();
-                startActivity(intent);
-            }
+        forgotPassword.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, ForgotPassword.class);
+            intent.putExtra("Message", "New password created");
+            finish();
+            startActivity(intent);
         });
 
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (username.getText().toString().equals("1234") && password.getText().toString().equals("1234")) {
-                    Toast.makeText(LoginActivity.this, "LOGIN SUCCESSFULLY", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-                    intent.putExtra("Login", "Home page opened");
-                    finish();
-                    startActivity(intent);
-                } else {
-                    Toast.makeText(LoginActivity.this, "You miss the username and password", Toast.LENGTH_SHORT).show();
-                }
+        home.setOnClickListener(v -> {
+            if (username.getText().toString().equals("1234") && password.getText().toString().equals("1234")) {
+                Toast.makeText(LoginActivity.this, "LOGIN SUCCESSFULLY", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                intent.putExtra("Login", "Home page opened");
+                finish();
+                startActivity(intent);
+            } else {
+                Toast.makeText(LoginActivity.this, "You miss the username and password", Toast.LENGTH_SHORT).show();
             }
         });
     }

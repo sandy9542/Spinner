@@ -2,7 +2,6 @@ package com.send.LoginApp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,30 +16,24 @@ public class HomeActivity extends AppCompatActivity {
         Button logout = findViewById(R.id.LogOut);
         Button getCourses = findViewById(R.id.courses);
         Intent intent = getIntent();
-        if(intent != null) {
+        if (intent != null) {
             String message = intent.getStringExtra("Send");
             if (message != null) {
                 Toast.makeText(HomeActivity.this, "ForgotPassword", Toast.LENGTH_SHORT).show();
             }
         }
 
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this,LoginActivity.class);
-                intent.putExtra("Logout","logout SUCCESSFULLY");
-                finish();
-                startActivity(intent);
-            }
+        logout.setOnClickListener(v -> {
+            Intent intent1 = new Intent(HomeActivity.this, LoginActivity.class);
+            intent1.putExtra("Logout", "logout SUCCESSFULLY");
+            finish();
+            startActivity(intent1);
         });
 
-        getCourses.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, CoursesActivity.class);
-                intent.putExtra("Subjects fetched ","");
-                startActivity(intent);
-            }
+        getCourses.setOnClickListener(v -> {
+            Intent intent1 = new Intent(HomeActivity.this, CoursesActivity.class);
+            intent1.putExtra("Subjects fetched ", "");
+            startActivity(intent1);
         });
     }
 }
