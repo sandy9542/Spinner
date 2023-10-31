@@ -12,19 +12,6 @@
         android:scaleType="centerCrop"
         android:src="@drawable/log" />
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:menu="@menu/homemenu" />
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 
     <TextView
         android:id="@+id/gatemechcourses"
@@ -39,7 +26,7 @@
     <TextView
         android:id="@+id/subject1"
         android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_height="147dp"
         android:text="Engineering Mathematics Syllabus"
         android:textStyle="bold"
         android:textSize="30dp"
@@ -51,7 +38,7 @@
     <TextView
         android:id="@+id/subject2"
         android:layout_width="250dp"
-        android:layout_height="80dp"
+        android:layout_height="78dp"
         android:text="Digital Logic"
         android:textStyle="bold"
         android:textSize="30dp"
@@ -76,7 +63,7 @@
     <TextView
         android:id="@+id/subject4"
         android:layout_width="350dp"
-        android:layout_height="112dp"
+        android:layout_height="111dp"
         android:text="Programming and Data Structures"
         android:textStyle="bold"
         android:textSize="30dp"
@@ -101,7 +88,7 @@
     <TextView
         android:id="@+id/subject6"
         android:layout_width="300dp"
-        android:layout_height="120dp"
+        android:layout_height="115dp"
         android:text="Theory of Computation"
         android:textStyle="bold"
         android:textSize="30dp"
