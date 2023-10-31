@@ -47,8 +47,14 @@
         layout="@layout/gatemechactivity"/>
     <include
         android:id="@+id/gatecse"
-        layout="@layout/gatemechactivity"/>
+        layout="@layout/gatecseactivity"/>
     <include
         android:id="@+id/BuyCourses"
         layout="@layout/gatecseactivity"/>
+    <include
+        android:id="@+id/outPuttxt"
+        layout="@layout/calculartoractivity"/>
+    <include
+        android:id="@+id/inputTxt"
+        layout="@layout/calculartoractivity"/>
 </RelativeLayout>

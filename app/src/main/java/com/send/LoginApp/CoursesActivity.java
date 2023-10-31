@@ -14,6 +14,7 @@ public class CoursesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.coursesactivity);
         Button gateMech = findViewById(R.id.gatemech);
+        Button gateCse = findViewById(R.id.gatecse);
         Intent intent = getIntent();
         if (intent != null) {
             String message = intent.getStringExtra("Searching");
@@ -23,8 +24,14 @@ public class CoursesActivity extends AppCompatActivity {
         }
 
         gateMech.setOnClickListener(v -> {
-            Intent intent1 = new Intent(CoursesActivity.this, SubjectsActivity.class);
+            Intent intent1 = new Intent(CoursesActivity.this, MechSubjectsActivity.class);
             intent1.putExtra("Gate Mech Courses", "Courses are opened");
+            startActivity(intent1);
+        });
+
+        gateCse.setOnClickListener(v-> {
+            Intent intent1 = new Intent(CoursesActivity.this, CseActivity.class);
+            intent1.putExtra("Gate Cse Courses", "Courses are opened");
             startActivity(intent1);
         });
     }

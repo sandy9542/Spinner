@@ -2,7 +2,6 @@ package com.send.LoginApp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,7 +23,7 @@ public class GateCseActivity extends AppCompatActivity {
         }
 
         gateCse.setOnClickListener(v ->{
-                Intent intent1 = new Intent(GateCseActivity.this, SubjectsActivity.class);
+                Intent intent1 = new Intent(GateCseActivity.this, CseActivity.class);
                 intent1.putExtra("Gate cse subjects", "subject are opened");
                 startActivity(intent1);
         });
